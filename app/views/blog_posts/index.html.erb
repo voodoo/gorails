@@ -1,7 +1,7 @@
-<h2>Blog Posts</h2>
+<h2 class="font-bold text-4xl text-blue-500">Blog Posts</h2>
 
 <% @blog_posts.each do |blog_post| %>
   <h3><%= blog_post.title %></h3>
-  <p><%= blog_post.body %></p>
+  <p><%= link_to "Read More", blog_post %></p>
 <% end %>
 
